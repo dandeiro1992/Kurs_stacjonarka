@@ -1,0 +1,11 @@
+ports = ['WAW', 'KRK', 'GDN', 'KTW', 'WMI', 'WRO', 'POZ', 'RZE', 'SZZ','LUZ', 'BZG', 'LCJ', 'SZY', 'IEG', 'RDO']
+
+tuplets=[(a,b)  for a in ports for b in ports]
+
+print(tuplets)
+
+tuplets2=[(a,b) for a in ports for b in ports[ports.index(a):] if b!=a]
+
+print(tuplets2)
+
+print(len(tuplets2))
